@@ -1,5 +1,0 @@
-✅ Etapes finales : ✅
-{ Mise en ligne : Déploiement sur Vercel } ❌
-{ NavBar : Améliorer la NavBar } ❌
-{ Dark Mode : Passer le site en sombre } ❌
-{ Button de traduction à placer responsive + modifier } ❌
