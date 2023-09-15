@@ -87,14 +87,14 @@ export default function Hero({ language }: { language: string }) {
                     <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
                 </Link>
                 <a
-                    className="bg-white/10 text-white/60 p-4 flex items-center gap-2 rounded-full border border-black/10 focus:scale-[1.15] hover:scale-[1.15] hover:text-gra-950 active:scale-105 transition"
+                    className="bg-white/10 text-white/80 p-4 flex items-center gap-2 rounded-full border border-black/10 focus:scale-[1.15] hover:scale-[1.15] hover:text-gra-950 active:scale-105 transition"
                     href="https://linkedin.com/in/benjamin-fontaine-5577671a2"
                     target="_blank"
                 >
                     <BsLinkedin />
                 </a>
                 <a
-                    className="dark:bg-white/10 dark:text-white/60 p-4 flex items-center gap-2 rounded-full border border-black/10 text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-gra-950 active:scale-105 transition"
+                    className="bg-white/10 text-white/80 p-4 flex items-center gap-2 rounded-full border border-black/10 text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-gra-950 active:scale-105 transition"
                     href="https://github.com/Benjoslecrack"
                     target="_blank"
                 >

@@ -3,9 +3,42 @@ import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
 
 import React from "react";
-import portfolio from "@/public/portfolio.png";
-import lucy from "@/public/lucy.png";
-import trading from "@/public/trading.png"
+
+export const typeLinks = [
+    {
+        name: "Home",
+    },
+    {
+        name: "About",
+    },
+    {
+        name: "Projects",
+    },
+    {
+        name: "Skills",
+    },
+    {
+        name: "Experiences",
+    },
+    {
+        name: "Contact",
+    },
+    {
+        name: "Accueil",
+    },
+    {
+        name: "À propos",
+    },
+    {
+        name: "Projets",
+    },
+    {
+        name: "Compétences",
+    },
+    {
+        name: "Expériences",
+    }
+] as const;
 
 export const links = {
     en: [
@@ -113,7 +146,7 @@ export const projectsData = {
             description:
                 "I worked on my portfolio to have a version that suited me. I include it in my projects because it was a valuable experience.",
             tags: ["React", "Next.js", "Tailwind", "TypeScript", "Framer"],
-            imageUrl: portfolio,
+            imageUrl: "/portfolio.png",
             href: ""
         },
         {
@@ -121,7 +154,7 @@ export const projectsData = {
             description:
                 "Here's a website I created, while I was working at a Start-Up. It was developed as part of a convention to promote the product.",
             tags: ["React", "TypeScript", "Next.js", "Tailwind", "Framer"],
-            imageUrl: lucy,
+            imageUrl: "/lucy.png",
             href: "https://www.lucy-project.com/"
         },
         {
@@ -129,7 +162,7 @@ export const projectsData = {
             description:
                 "A website for which I had to create an algorithm to determine a trader's profile. It assists them in analyzing their needs and understanding their weaknesses.",
             tags: ["React", "JavaScript", "Next.js", "Tailwind", "Redux"],
-            imageUrl: trading,
+            imageUrl: "/trading.png",
             href: "https://mks-trading.fr/"
         }
     ],
@@ -139,7 +172,7 @@ export const projectsData = {
             description:
                 "J'ai travaillé sur mon Portfolio pour avoir une version qui me convenait. Je l'inclus dans mes projets car c'était une bonne expérience.",
             tags: ["React", "Next.js", "Tailwind", "TypeScript", "Framer"],
-            imageUrl: portfolio,
+            imageUrl: "/portfolio.png",
             href: ""
         },
         {
@@ -147,7 +180,7 @@ export const projectsData = {
             description:
                 "Voici un site que j'ai crée lorsque je travaillais en Start-Up. Il a été réaliser dans le cadre dans d'une convention pour faire connaître le produit.",
             tags: ["React", "TypeScript", "Next.js", "Tailwind", "Framer"],
-            imageUrl: lucy,
+            imageUrl: "/lucy.png",
             href: "https://www.lucy-project.com/"
         },
         {
@@ -155,7 +188,7 @@ export const projectsData = {
             description:
                 "Un site pour lequel j'ai du créer un algorithme pour déterminer le profil d'un trader. Il l'aide à analyser ses besoins et à comprendre ses faiblesses.",
             tags: ["React", "JavaScript", "Next.js", "Tailwind", "Redux"],
-            imageUrl: trading,
+            imageUrl: "/trading.png",
             href: "https://mks-trading.fr/"
         }
     ]

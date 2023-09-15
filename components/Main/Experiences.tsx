@@ -2,10 +2,7 @@
 
 import React from "react";
 import SectionHeading from "../SectionHeading";
-import {
-    VerticalTimeline,
-    VerticalTimelineElement,
-} from "react-vertical-timeline-component";
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import "react-vertical-timeline-component/style.min.css";
 import { experiencesData, links } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
@@ -16,7 +13,7 @@ export default function Experiences({ language }: { language: string }) {
     return (
         <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
             <SectionHeading>{language === 'fr' ? 'Mes Expériences' : 'My Experiences'}</SectionHeading>
-            <VerticalTimeline lineColor="">
+            <VerticalTimeline lineColor="white">
                 {experiencesData[language as keyof typeof experiencesData].map((item, index) => (
                     <React.Fragment key={index}>
                         <VerticalTimelineElement
@@ -31,12 +28,9 @@ export default function Experiences({ language }: { language: string }) {
                                 borderRight: "0.4rem solid rgba(255, 255, 255, 0.5)",
                             }}
                             date={item.date}
-                            dateStyle={{
-                                margin: "3rem"
-                            }}
                             icon={item.icon}
                             iconStyle={{
-                                background: "rgba(255, 255, 255, 0.15)",
+                                background: "#111827",
                                 fontSize: "1.5rem",
                             }}
                         >
