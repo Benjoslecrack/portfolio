@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "../SubmitBtn";
-import toast from "react-hot-toast";
+import toast, { Toaster } from "react-hot-toast";
 import { contactTexts } from "@/lib/data";
 
 export default function Contact({ language }: { language: string }) {
@@ -33,8 +33,8 @@ export default function Contact({ language }: { language: string }) {
       <SectionHeading>{contactTexts[language as keyof typeof contactTexts].title}</SectionHeading>
 
       <p className="text-gray-700 -mt-6 text-white/80">
-      {contactTexts[language as keyof typeof contactTexts].description1}{" "}
-        <a className="underline" href="mailto:example@gmail.com">
+        {contactTexts[language as keyof typeof contactTexts].description1}{" "}
+        <a className="underline" href="mailto:fontaine28210@gmail.com">
           fontaine28210@gmail.com
         </a>{" "}
         {contactTexts[language as keyof typeof contactTexts].description2}
@@ -50,7 +50,9 @@ export default function Contact({ language }: { language: string }) {
             return;
           }
 
-          toast.success("Email sent successfully!");
+          console.log("Toast, ", data, "error : ", error)
+
+          toast.success(contactTexts[language as keyof typeof contactTexts].toastSuccess);
         }}
       >
         <input
@@ -69,6 +71,7 @@ export default function Contact({ language }: { language: string }) {
           maxLength={5000}
         />
         <SubmitBtn text={contactTexts[language as keyof typeof contactTexts].buttonText} />
+        <Toaster />
       </form>
     </motion.section>
   );

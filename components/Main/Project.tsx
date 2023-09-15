@@ -1,24 +1,22 @@
 "use client";
 
 import { useRef } from "react";
-import { projectsData } from "@/lib/data";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-
-type ProjectProps = {
-  title: string;
-  description: string;
-  tags: readonly string[];
-  imageUrl: string; // Assurez-vous que le type est correct pour imageUrl
-  href: string;
-};
 
 export default function Project({
   title,
   description,
   tags,
   imageUrl,
-}: ProjectProps) {
+  alt
+}: {
+  title : string,
+  description : string,
+  tags : readonly string[],
+  imageUrl : string | StaticImageData,
+  alt: string
+}) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -38,7 +36,7 @@ export default function Project({
       "SQL": "bg-yellow-500/[0.7]",
       "MongoDB": "bg-green-400/[0.7]",
       "Prisma": "bg-purple-400/[0.7]",
-      "JavaScript" : "bg-yellow-400/[0.7]"
+      "JavaScript": "bg-yellow-400/[0.7]"
     };
 
     return tagToColorMapping[tag];
@@ -73,9 +71,7 @@ export default function Project({
 
         <Image
           src={imageUrl}
-          width={600}
-          height={300}
-          alt="Project I worked on"
+          alt={alt}
           quality={95}
           className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-lg shadow-2xl
         transition 

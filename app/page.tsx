@@ -1,4 +1,3 @@
-import TranslateButton from '@/components/TranslateButton';
 import Main from '@/components/Main/Main';
 
 export default function Home() {

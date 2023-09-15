@@ -1,6 +1,9 @@
 // Images
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
+import lucyImg from '@/public/lucy.png';
+import portfolioImg from '@/public/portfolio.png';
+import tradingImg from '@/public/trading.png';
 
 import React from "react";
 
@@ -146,7 +149,8 @@ export const projectsData = {
             description:
                 "I worked on my portfolio to have a version that suited me. I include it in my projects because it was a valuable experience.",
             tags: ["React", "Next.js", "Tailwind", "TypeScript", "Framer"],
-            imageUrl: "/portfolio.png",
+            imageUrl: portfolioImg,
+            alt: "Portfolio",
             href: ""
         },
         {
@@ -154,7 +158,8 @@ export const projectsData = {
             description:
                 "Here's a website I created, while I was working at a Start-Up. It was developed as part of a convention to promote the product.",
             tags: ["React", "TypeScript", "Next.js", "Tailwind", "Framer"],
-            imageUrl: "/lucy.png",
+            imageUrl: lucyImg,
+            alt: "Lucy",
             href: "https://www.lucy-project.com/"
         },
         {
@@ -162,7 +167,8 @@ export const projectsData = {
             description:
                 "A website for which I had to create an algorithm to determine a trader's profile. It assists them in analyzing their needs and understanding their weaknesses.",
             tags: ["React", "JavaScript", "Next.js", "Tailwind", "Redux"],
-            imageUrl: "/trading.png",
+            imageUrl: tradingImg,
+            alt: "Trading",
             href: "https://mks-trading.fr/"
         }
     ],
@@ -172,7 +178,8 @@ export const projectsData = {
             description:
                 "J'ai travaillé sur mon Portfolio pour avoir une version qui me convenait. Je l'inclus dans mes projets car c'était une bonne expérience.",
             tags: ["React", "Next.js", "Tailwind", "TypeScript", "Framer"],
-            imageUrl: "/portfolio.png",
+            imageUrl: portfolioImg,
+            alt: "Portfolio",
             href: ""
         },
         {
@@ -180,7 +187,8 @@ export const projectsData = {
             description:
                 "Voici un site que j'ai crée lorsque je travaillais en Start-Up. Il a été réaliser dans le cadre dans d'une convention pour faire connaître le produit.",
             tags: ["React", "TypeScript", "Next.js", "Tailwind", "Framer"],
-            imageUrl: "/lucy.png",
+            imageUrl: lucyImg,
+            alt: "Lucy",
             href: "https://www.lucy-project.com/"
         },
         {
@@ -188,7 +196,8 @@ export const projectsData = {
             description:
                 "Un site pour lequel j'ai du créer un algorithme pour déterminer le profil d'un trader. Il l'aide à analyser ses besoins et à comprendre ses faiblesses.",
             tags: ["React", "JavaScript", "Next.js", "Tailwind", "Redux"],
-            imageUrl: "/trading.png",
+            imageUrl: tradingImg,
+            alt: "Trading",
             href: "https://mks-trading.fr/"
         }
     ]
