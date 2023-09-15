@@ -1,9 +1,9 @@
 // Images
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
-import lucyImg from '@/public/lucy.png';
-import portfolioImg from '@/public/portfolio.png';
-import tradingImg from '@/public/trading.png';
+import lucyImg from '../public/lucy.png';
+import portfolioImg from '../public/portfolio.png';
+import tradingImg from '../public/trading.png';
 
 import React from "react";
 
