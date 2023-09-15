@@ -1,9 +1,9 @@
 // Images
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
-import lucyImg from '../static/lucy.png';
-import portfolioImg from '../static/portfolio.png';
-import tradingImg from '../static/trading.png';
+// import lucyImg from '../static/lucy.png';
+// import portfolioImg from '../static/portfolio.png';
+// import tradingImg from '../static/trading.png';
 
 import React from "react";
 
@@ -158,7 +158,7 @@ export const projectsData = {
             description:
                 "Here's a website I created, while I was working at a Start-Up. It was developed as part of a convention to promote the product.",
             tags: ["React", "TypeScript", "Next.js", "Tailwind", "Framer"],
-            imageUrl: lucyImg,
+            imageUrl: "/static/lucy.png",
             alt: "Lucy",
             href: "https://www.lucy-project.com/"
         },
@@ -167,7 +167,7 @@ export const projectsData = {
             description:
                 "A website for which I had to create an algorithm to determine a trader's profile. It assists them in analyzing their needs and understanding their weaknesses.",
             tags: ["React", "JavaScript", "Next.js", "Tailwind", "Redux"],
-            imageUrl: tradingImg,
+            imageUrl: "/static/trading.png",
             alt: "Trading",
             href: "https://mks-trading.fr/"
         }
@@ -178,7 +178,7 @@ export const projectsData = {
             description:
                 "J'ai travaillé sur mon Portfolio pour avoir une version qui me convenait. Je l'inclus dans mes projets car c'était une bonne expérience.",
             tags: ["React", "Next.js", "Tailwind", "TypeScript", "Framer"],
-            imageUrl: portfolioImg,
+            imageUrl: "/static/portfolio.png",
             alt: "Portfolio",
             href: ""
         },
@@ -187,7 +187,7 @@ export const projectsData = {
             description:
                 "Voici un site que j'ai crée lorsque je travaillais en Start-Up. Il a été réaliser dans le cadre dans d'une convention pour faire connaître le produit.",
             tags: ["React", "TypeScript", "Next.js", "Tailwind", "Framer"],
-            imageUrl: lucyImg,
+            imageUrl: "/static/lucy.png",
             alt: "Lucy",
             href: "https://www.lucy-project.com/"
         },
@@ -196,7 +196,7 @@ export const projectsData = {
             description:
                 "Un site pour lequel j'ai du créer un algorithme pour déterminer le profil d'un trader. Il l'aide à analyser ses besoins et à comprendre ses faiblesses.",
             tags: ["React", "JavaScript", "Next.js", "Tailwind", "Redux"],
-            imageUrl: tradingImg,
+            imageUrl: "/static/trading.png",
             alt: "Trading",
             href: "https://mks-trading.fr/"
         }
