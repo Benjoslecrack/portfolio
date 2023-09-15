@@ -149,7 +149,7 @@ export const projectsData = {
             description:
                 "I worked on my portfolio to have a version that suited me. I include it in my projects because it was a valuable experience.",
             tags: ["React", "Next.js", "Tailwind", "TypeScript", "Framer"],
-            imageUrl: portfolioImg,
+            imageUrl: "/static/portfolio.png",
             alt: "Portfolio",
             href: ""
         },
